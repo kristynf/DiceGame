@@ -6,9 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //variables
-        int dice1;
-        int dice2;
+
 
        //Call the welcome method
         welcome();
@@ -22,22 +20,17 @@ public class Main {
         }
         String response;
 
-
-
-
             int sum = 0;
             while (sum <= 100) {
                 int dice1 = (int) (Math.random() * 6 + 1);
                 int dice2 = (int) (Math.random() * 6 + 1);
-                int sum = dice1 + dice2;
-                int total
+                sum = dice1 + dice2;
+                int total = (sum + (dice1 + dice2));
 
                 System.out.println("Your rolls:" + dice1 +"  " + dice2);
                 System.out.println("Roll: total = " + sum);
 
 
-
-            }
                 do {
 
                     if (sum > 100) {
@@ -55,15 +48,19 @@ public class Main {
                     } else if (dice1 == 1 && dice2 == 6) {
                         System.out.println("You Lose!");
                     }
-                    Scanner sc = new Scanner(System.in);
                     System.out.println("Your score is: " + sum);
-                    System.out.println("Your total is: " + values);
+                    System.out.println("Your total is: " + total);
+
+
+                    Scanner sc = new Scanner(System.in);
                     System.out.println("Do you want to continue: y/n");
                     response = sc.nextLine();
-                }
+                    if (response.equalsIgnoreCase("n")) ;
+                    System.out.println("Thanks for playing!");
+                    sc.nextLine();
 
+                while (response.equalsIgnoreCase("y"));
 
-        while (response.equalsIgnoreCase("y"));
 
 
 
@@ -72,4 +69,4 @@ public class Main {
 
 
 
-        }}}
+        }}
