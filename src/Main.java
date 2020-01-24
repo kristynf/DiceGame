@@ -26,7 +26,7 @@ public class Main {
          */
     }
     public static void welcome() {
-        System.out.println("Welcome to a Lucky (for me) Dice Game! \nFEELING LUCKY?!? Hope you brought lots of CASH!");{
+        System.out.println("Welcome to my Dice Game");{
         }
 
         int dice1=(int)(Math.random()*6+1);
@@ -43,40 +43,32 @@ public class Main {
             }
             return sum;
         }
-        while(sum <100){
-         String
+
+
 
         if (dice1==1 && dice2==1){
-            System.out.println("SNAKE EYES!" + sum + 25); }
-        else if(dice1==1 && dice2==2) {
-            System.out.println("You Lose!"); }
-            break;
-        else if(dice1==1 && dice2==3) {
-            System.out.println("You Lose!"); }
-            break;
+            System.out.println("SNAKE EYES!" + sum + 25)}
+        else if(dice1==1 && dice2==2){
+            System.out.println("You Lose!");}
+
+        else if(dice1==1 && dice2==3){
+            System.out.println("You Lose!");}
+
         else if(dice1==1 && dice2==4){
-            System.out.println("You Lose!"); }
-            break;
-        else if(dice1==1 && dice2==5) {
-            System.out.println("You Lose!"); }
-            break;
-        else if(dice1==1 && dice2==6) {
-            System.out.println("You Lose!"); }
-            break;
+            System.out.println("You Lose!");}
+
+        else if(dice1==1 && dice2==5){
+            System.out.println("You Lose!");}
+
+        else if(dice1==1 && dice2==6){
+            System.out.println("You Lose!");}
 
 
+        while(sum <100 && answer == "yes"){
 
         }
-            if(sum==4 ||sum==5 ||sum==6 ||sum==8 ||sum==9 ||sum==10)
-                dice1=(int)(Math.random()*6+1);
-            dice2=(int)(Math.random()*6+1);}
-        int roll2 = dice1 + dice2;}
-    System.out.print("You rolled "+roll2+"  ");{
-        while (roll2 !=7){
-            if (roll == roll2);{
-                System.out.println("You Win !");
-                break;
-            }else{
 
-            }
+
+
+
         }}
