@@ -1,3 +1,4 @@
+import HighestValue.HighestValue;
 import com.sun.source.tree.ContinueTree;
 
 import java.util.Scanner;
@@ -16,7 +17,7 @@ public class Main {
 
     }
 
-    public static void welcome() {
+    public static HighestValue welcome() {
         System.out.println("Welcome to my Dice Game");{
         }
         String response;
