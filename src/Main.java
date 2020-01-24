@@ -3,20 +3,17 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+        welcome();
     }
+
 
     public static void welcome() {
         System.out.println("Welcome to my Dice Game");
-        {
-            welcome();
-        }
-        String response;
 
 
+       String response;
 
-
-            do {
+        do {
 
                 int sum = 0;
 
@@ -58,7 +55,8 @@ public class Main {
                 response = sc.nextLine();
                 // No need to check for "n" answers here, anything except for "y"
                 // will dump us out of the loop
-            } while(response.equalsIgnoreCase("y"));
-                System.out.println("Thanks for playing!");
+            } while(!response.equalsIgnoreCase("y"));}
+                {System.out.println("Thanks for playing!");}
         }
-    }
+
+
