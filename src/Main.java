@@ -13,26 +13,18 @@ public class Main {
         }
         String response;
 
-        int sum = 0;
-        while (sum <= 100) {
-            int dice1 = (int) (Math.random() * 6 + 1);
-            int dice2 = (int) (Math.random() * 6 + 1);
-            sum = (sum + dice1 + dice2);
-            int total = (sum + (dice1 + dice2));
 
-            System.out.println("Your rolls:" + dice1 + "  " + dice2);
-            System.out.println("Roll: total = " + sum);
 
 
             do {
 
-                sum = 0;
+                int sum = 0;
 
                 while (sum <= 100) {
                     // Step 1 - roll two dice, tell the user what they got
-                    dice1 = (int) (Math.random() * 6 + 1);
-                    dice2 = (int) (Math.random() * 6 + 1);
-                    total = dice1 + dice2;
+                    int dice1 = (int) (Math.random() * 6 + 1);
+                    int dice2 = (int) (Math.random() * 6 + 1);
+                    int total = dice1 + dice2;
                     System.out.println("Your rolls: " + dice1 + " " + dice2);
 
                     // Step 2 - check for 1s in the total
@@ -69,4 +61,4 @@ public class Main {
             } while(response.equalsIgnoreCase("y"));
                 System.out.println("Thanks for playing!");
         }
-    }}
+    }
